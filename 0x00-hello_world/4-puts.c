@@ -1,8 +1,8 @@
 #include <stdio.h>
-
-int main (void)
+/* my first c file */
+int main(void)
 {
-char stg [100] = "\"Programming is like building a multilingual puzzle";
+char stg[100] = "\"Programming is like building a multilingual puzzle";
 puts(stg);
-return 0;
+return (0);
 }
