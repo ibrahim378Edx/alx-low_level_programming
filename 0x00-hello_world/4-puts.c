@@ -1,8 +1,14 @@
 #include <stdio.h>
-/* my first c file */
+/**
+ * main - Entry point
+ * 
+ * Description: 'the program's description'
+ * @parameter: describe the parameter
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-/* defines a char and prints it out  */
 char stg[100] = "\"Programming is like building a multilingual puzzle";
 puts(stg);
 return (0);
