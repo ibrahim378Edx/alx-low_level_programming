@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char z;
+int z;
 
 int i;
 
