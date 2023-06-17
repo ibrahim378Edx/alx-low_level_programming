@@ -18,19 +18,14 @@ for (z = 0; z <= 9; z++)
 		{
 			for (m = x + 1; m <= 9; m++)
 			{
-				//if (x < m)
-				//{
 					putchar(z + '0');
 					putchar(x + '0');
 					putchar(' ');
 					putchar(y + '0');
 					putchar(m + '0');
-				//}
-				//if (x < m)
-				//{
 					putchar(',');
 					putchar(' ');
-				//}
+				
 			}
 		}
 	}
