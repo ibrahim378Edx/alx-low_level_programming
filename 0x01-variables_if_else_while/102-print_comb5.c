@@ -1,37 +1,36 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int z;
-int x;
-int y;
-int m;
-for (z = 0; z <= 9; z++)
+int i, j;
+for (i = 0; i <= 99; i++)
 {
-	for (x = 0; x <= 9; x++)
+	for (j = i; j <= 99; j++)
 	{
-		for (y = z; y <= 9; y++)
+		if (i == j)
 		{
-			for (m = x; m <= 9; m++)
-			{
-					putchar(z + '0');
-					putchar(x + '0');
-					putchar(' ');
-					putchar(y + '0');
-					putchar(m + '0');
-					putchar(',');
-					putchar(' ');
-				
-			}
+			continue;
+		}
+		if (i % 10 == 0 && j % 10 == 0)
+		{
+			continue;
+		}
+		putchar(i / 10 + '0');
+		putchar(i % 10 + '0');
+		putchar(' ');
+		putchar(j / 10 + '0');
+		putchar(j % 10 + '0');
+		if (i != 98 || j != 99)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 }
 putchar('\n');
 return (0);
 }
-
-
