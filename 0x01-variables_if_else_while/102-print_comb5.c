@@ -14,23 +14,23 @@ for (z = 0; z <= 9; z++)
 {
 	for (x = 0; x <= 9; x++)
 	{
-		for (y = 0; y <= 9; y++)
+		for (y = z; y <= 9; y++)
 		{
-			for (m = 0; m <= 9; m++)
+			for (m = x + 1; m <= 9; m++)
 			{
-				if (x < m && z == y)
-				{
+				//if (x < m)
+				//{
 					putchar(z + '0');
 					putchar(x + '0');
 					putchar(' ');
 					putchar(y + '0');
 					putchar(m + '0');
-				}
-				if (x < m && z == y && (z != 9 || x != 8))
-				{
+				//}
+				//if (x < m)
+				//{
 					putchar(',');
 					putchar(' ');
-				}
+				//}
 			}
 		}
 	}
