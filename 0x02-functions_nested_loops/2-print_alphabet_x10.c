@@ -4,7 +4,7 @@
  *
  * Return: 0 for success
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 int x;
 x = 0;
@@ -13,5 +13,4 @@ while (x < 10)
 print_alphabet();
 x++;
 }
-return (0);
 }
