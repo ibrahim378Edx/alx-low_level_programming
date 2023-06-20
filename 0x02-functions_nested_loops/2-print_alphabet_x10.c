@@ -17,6 +17,7 @@ while (x < 10)
 		_putchar(alpha);
 		alpha++;
 	}
+_putchar('\n');
 x++;
 }
 }
