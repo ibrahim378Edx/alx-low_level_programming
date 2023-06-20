@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - prints alphabet
  *
  * Return: Always 0.
  */
-void print_alphabet()
+void print_alphabet(void)
 {
 char alpha;
 alpha = 'a';
-while(alpha < 123)
+while (alpha < 123)
 {
 	_putchar(alpha);
 	alpha++;
