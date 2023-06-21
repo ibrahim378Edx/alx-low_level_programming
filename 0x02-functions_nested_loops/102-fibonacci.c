@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-  *
-  * main - outputs first 52 fibonacci numbers
-  * Return: 0 success 
-  */
+ * main - Prints the first 52 fibonacci numbers *
+ *
+ * Return: 0 for success
+ */
 int main(void)
 {
 int i = 0;
