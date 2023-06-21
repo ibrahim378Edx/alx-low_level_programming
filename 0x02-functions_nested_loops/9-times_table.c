@@ -25,7 +25,7 @@ _putchar(m + '0');
 }
 else
 {
-if (z != 0)
+if (z != 0 || l < 9)
 {
 _putchar(',');
 _putchar(' ');
