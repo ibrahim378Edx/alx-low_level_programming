@@ -31,8 +31,8 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
-}
 _putchar(l + '0');
+}
 }
 _putchar('\n');
 }
