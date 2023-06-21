@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
-  * main - the sum of all multiples of 3 or 5 
+  * main - the sum of all multiples of 3 or 5
   *
   * Return: 0 always success
   */
