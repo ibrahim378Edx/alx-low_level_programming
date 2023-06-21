@@ -31,7 +31,7 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
-putchar(l + '0');
+_putchar(l + '0');
 }
 }
 _putchar('\n');
