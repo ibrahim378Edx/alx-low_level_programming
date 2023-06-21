@@ -36,6 +36,7 @@ _putchar(' ');
 _putchar(l + '0');
 }
 }
+_putchar('0');
 }
 _putchar('\n');
 }
