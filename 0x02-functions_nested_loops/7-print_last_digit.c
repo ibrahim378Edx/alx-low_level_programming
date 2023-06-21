@@ -12,7 +12,7 @@ int z;
 z = a % 10;
 if (z < 0)
 {
-a = a * -1;
+z = z * -1;
 }
 _putchar(z + '0');
 return (z);
