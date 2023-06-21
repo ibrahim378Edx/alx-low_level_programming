@@ -18,10 +18,10 @@ if (l > 9)
 {
 q = l / 10;
 m = l % 10;
-_putchar(',');
-_putchar(' ');
 _putchar(q + '0');
 _putchar(m + '0');
+_putchar(',');
+_putchar(' ');
 }
 else
 {
