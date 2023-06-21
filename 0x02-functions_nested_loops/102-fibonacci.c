@@ -21,7 +21,7 @@ printf(", %ld", m);
 else
 {
 m = m + q;
-q = k - q;
+q = m - q;
 printf(", %ld", m);
 }
 ++i;
