@@ -12,7 +12,7 @@ for (z = 0; z < 10; z++)
 {
 	for (i = 0; i < 15; i++)
 	{
-		if (i < 9)
+		if (i <= 9)
 		{
 			_putchar(i + '0');
 		}
