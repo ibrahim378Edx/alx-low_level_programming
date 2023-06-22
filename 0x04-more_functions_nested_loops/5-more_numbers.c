@@ -28,5 +28,4 @@ for (z = 0; z < 10; z++)
 	}
 _putchar('\n');
 }
-return (0);
 }
