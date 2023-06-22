@@ -5,7 +5,7 @@
  * @a: first value
  * @b: second value
  *
- * Returns the result of the multiplication process
+ * Returns: the result of the multiplication process
  */
 int mul(int a, int b)
 {
