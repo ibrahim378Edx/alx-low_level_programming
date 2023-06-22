@@ -13,20 +13,17 @@ if (size > 0)
 {
 for (i = 0; i < size; i++)
 {
-        for (l = i; l < size; l++)
-        {
-                _putchar(' ');
-        }
+	for (l = i; l < size; l++)
+	{
+		_putchar(' ');
+	}
 	for (q = size - i - 1; q < size; q++)
-        {
-                _putchar('#');
-        }
+	{
+		_putchar('#');
+	}
 
 _putchar('\n');
 }
 }
-else
-{
 _putchar('\n');
-}
 }
