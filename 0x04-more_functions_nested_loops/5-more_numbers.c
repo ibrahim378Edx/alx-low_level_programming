@@ -6,8 +6,8 @@
  */
 void more_numbers(void)
 {
-int i, z;
-int m, q;
+int i, z, s;
+int m[22];
 for (z = 0; z < 10; z++)
 {
 	for (i = 0; i < 15; i++)
@@ -18,10 +18,12 @@ for (z = 0; z < 10; z++)
 		}
 		else
 		{
-			m = i / 10;
-			q = i % 10;
-			_putchar(m + '0');
-			_putchar(q + '0');
+			for (s = 0; s < 2; s++)
+			{
+				m[0] = i / 10;
+				m[1] = i % 10;
+				_putchar(m[s] + '0');
+			}
 		}
 	}
 _putchar('\n');
