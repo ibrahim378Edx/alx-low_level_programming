@@ -20,7 +20,6 @@ for (i = 0; i < size; i++)
 	for (q = size - i - 1; q < size; q++)
 	{
 		_putchar('#');
-	
 	}
 _putchar('\n');
 }
