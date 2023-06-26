@@ -12,6 +12,6 @@
 void _puts(char *str)
 {
 char c = '\n';
-write(STDOUT_FILENO, str, strlen(str)+1);
+write(STDOUT_FILENO, str, strlen(str));
 write(STDOUT_FILENO, &c, sizeof(c));
 }
