@@ -3,13 +3,15 @@
 #include <unistd.h>
 #include <string.h>
 /**
- * _puts - prints strings
+ * _puts - function that prints strings for some reason
  *
- * str: value to print
+ * str: string to print
  *
- * Return: nothing to return
+ * return: nothing
  */
 void _puts(char *str)
 {
-write(STDOUT_FILENO, str, strlen(str));
+char c = '\n';
+write(STDOUT_FILENO, str, strlen(str)+1);
+write(STDOUT_FILENO, &c, 1);
 }
