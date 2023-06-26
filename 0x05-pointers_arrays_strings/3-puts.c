@@ -5,7 +5,7 @@
 /**
  * _puts - function that prints strings for some reason
  *
- * str: string to print
+ * @str: string to print
  *
  * return: nothing
  */
