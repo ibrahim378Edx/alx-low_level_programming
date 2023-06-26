@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 /**
  * _puts - prints strings
  *
@@ -10,5 +11,5 @@
  */
 void _puts(char *str)
 {
-write(STDOUT_FILENO, str, sizeof(str)-1);
+write(STDOUT_FILENO, str, strlen(str));
 }
