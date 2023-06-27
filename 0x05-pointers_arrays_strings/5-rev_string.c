@@ -21,6 +21,8 @@ for (i = clen - 1, j = 0; i >= 0; i--, j++)
 n[j] = s[i];
 }
 s = n;
+
+write(STDOUT_FILENO, s, strlen(s));
 write(STDOUT_FILENO, &c, sizeof(c));
 free(n);
 }
