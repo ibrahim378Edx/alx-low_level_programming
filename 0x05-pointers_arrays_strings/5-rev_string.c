@@ -15,12 +15,12 @@ void rev_string(char *s)
 char c = '\n';
 int clen = strlen(s);
 char *n = malloc(clen + 1);
-int i, j;
+int i, j, z;
 for (i = clen - 1, j = 0; i >= 0; i--, j++)
 {
 n[j] = s[i];
 }
-for (int z = 0; z < strlen(n); z++)
+for (z = 0; z < strlen(n); z++)
 {
 s[z] = n[z];
 }
