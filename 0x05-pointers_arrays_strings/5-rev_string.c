@@ -12,7 +12,6 @@
  */
 void rev_string(char *s)
 {
-char c = '\n';
 int clen = strlen(s);
 char *n = malloc(clen + 1);
 int i, j;
@@ -20,7 +19,7 @@ for (i = clen - 1, j = 0; i >= 0; i--, j++)
 {
 n[j] = s[i];
 }
-s = n
+s = n;
 write(STDOUT_FILENO, &c, sizeof(c));
 free(n);
 }
