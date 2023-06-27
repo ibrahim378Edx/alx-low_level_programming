@@ -12,6 +12,7 @@
  */
 void rev_string(char *s)
 {
+char c = '\n';
 int clen = strlen(s);
 char *n = malloc(clen + 1);
 int i, j;
