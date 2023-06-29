@@ -18,7 +18,7 @@ len = strlen(src);
 len1 = strlen(dest);
 while (i < len + 1)
 {
-*(dest + len1 + i ) = *(src + i);
+*(dest + len1 + i) = *(src + i);
 i++;
 }
 return (dest);
