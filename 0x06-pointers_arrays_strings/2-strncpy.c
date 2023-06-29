@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 /**
@@ -14,9 +14,7 @@ include "main.h"
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-nt len, len1;
 int i = 0;
-len = strlen(src);
 while (i < n)
 {
 *(dest +  i) = *(src + i);
