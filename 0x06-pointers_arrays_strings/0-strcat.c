@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-/*
- * _strcat - function that concatenates two strings
+/**
+ * _strcat - function that concatenates strings
  *
  * @dest: the string that ill get the copy
  *
  * @src: the source string that will copy
  *
- * Return: the string
+ * Return: the string needed
  */
 char *_strcat(char *dest, char *src)
 {
