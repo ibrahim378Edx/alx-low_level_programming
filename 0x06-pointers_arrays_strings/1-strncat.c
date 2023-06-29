@@ -19,7 +19,7 @@ int i = 0;
 len1 = strlen(dest);
 while (i < n)
 {
-if (!*(src + i))
+if (*(src + i))
 {
 *(dest + len1 + i) = *(src + i);
 i++;
