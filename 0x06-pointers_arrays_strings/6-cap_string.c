@@ -9,24 +9,19 @@
   *
   * Return: the string after being cap
   */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-int a = 0, i;
-int cspc = 13;
-char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
-while (s[a])
+int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!','?', '"', '(', ')', '{', '}'};
+int i, j;
+for (i = 0; str[i] != '\0'; i++)
 {
-i = 0;
-while (i < cspc)
+if (str[0] >= 97 && str[0] <= 122)
 {
-if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-{
-s[a] -= 32;
-i++;
+str[0] = str[0] - 32;
 }
+for (j = 0; j < 14; j++)
+if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
+str[i] = str[i] - 32;
 }
-a++;
+return (str);
 }
-return (s);
-}
-
