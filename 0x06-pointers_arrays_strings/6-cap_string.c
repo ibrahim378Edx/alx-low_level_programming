@@ -9,9 +9,10 @@
   *
   * Return: the string after being cap
   */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!','?', '"', '(', ')', '{', '}'};
+int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')'
+	, '{', '}'};
 int i, j;
 for (i = 0; str[i] != '\0'; i++)
 {
