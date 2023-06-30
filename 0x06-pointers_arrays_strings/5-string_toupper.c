@@ -14,7 +14,7 @@ char *string_toupper(char *s)
 int i, len;
 len = strlen(s);
 i = 0;
-while (i < len - 1)
+while (i < len)
 {
 if ((*(s + i) <= 90 && *(s + i) > 65) || (*(s + i) <= 122 && *(s + i) >= 97))
 {
