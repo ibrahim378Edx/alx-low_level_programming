@@ -1,4 +1,6 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
 /**
  * *rot13 - function that encodes a string
  *
