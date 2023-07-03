@@ -19,15 +19,15 @@ unsigned int counter;
 counter = 1;
 len = strlen(s);
 len1 = strlen(accept);
-for(i = 0; i <= len; i++)
+for (i = 0; i <= len; i++)
 {
-	for(z = 0; z <= len1; z++)
+	for (z = 0; z <= len1; z++)
 	{
 		if (*(s + z) == *(accept + i))
-				{
-				counter++;
-				break;
-				}
+		{
+			counter++;
+			break;
+		}
 	}
 }
 return (counter);
