@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 int i, z;
 int len, len1;
 unsigned int counter;
-counter = 1;
+counter = 0;
 len = strlen(s);
 len1 = strlen(accept);
 for (i = 0; i <= len; i++)
@@ -26,7 +26,6 @@ for (i = 0; i <= len; i++)
 		if (*(s + z) == *(accept + i))
 		{
 			counter++;
-			break;
 		}
 	}
 }
