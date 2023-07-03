@@ -23,7 +23,7 @@ for (i = 0; i <= len; i++)
 {
 	for (z = 0; z <= len1; z++)
 	{
-		if (*(s + z) == *(accept + i))
+		if (*(s + i) == *(accept + z))
 		{
 			counter++;
 		}
