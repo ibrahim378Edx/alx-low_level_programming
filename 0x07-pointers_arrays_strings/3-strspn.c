@@ -18,7 +18,7 @@ unsigned int counter;
 counter = 0;
 for (i = 0; *(s + i); i++)
 {
-	for (z = 0; z <= *(accept + z); z++)
+	for (z = 0; *(accept + z); z++)
 	{
 		if (*(s + i) == *(accept + z))
 		{
