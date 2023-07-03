@@ -14,20 +14,22 @@
 unsigned int _strspn(char *s, char *accept)
 {
 int i, z;
-int len, len1;
 unsigned int counter;
 counter = 0;
-len = strlen(s);
-len1 = strlen(accept);
-for (i = 0; i <= len; i++)
+for (i = 0; *(s + i); i++)
 {
-	for (z = 0; z <= len1; z++)
+	for (z = 0; z <= *(accept + z); z++)
 	{
 		if (*(s + i) == *(accept + z))
 		{
 			counter++;
+			break;
 		}
 	}
+if (*(accept + i) == '\0')
+{
+	break;
+}
 }
 return (counter);
 }
