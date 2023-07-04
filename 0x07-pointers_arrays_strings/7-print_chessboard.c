@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-
+/**
+ * print_chessboard - prints a chessboard for some reason
+ *
+ * @a: 2 dim array
+ *
+ * Return: nothing
+ */
 void print_chessboard(char (*a)[8])
 {
 int i, j;
