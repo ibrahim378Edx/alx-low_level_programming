@@ -18,7 +18,7 @@ if (n < 0)
 {
 return (-1);
 }
-else if (d % 2 != 0 && d != 5)
+else if (d % 2 != 0 && d != 5 && d != 1)
 {
 return (-1);
 }
