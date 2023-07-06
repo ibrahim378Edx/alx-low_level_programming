@@ -8,7 +8,7 @@ int sqrter(int i, int l);
  *
  *Return: the square root
  */
- int _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 int z, d;
 
@@ -33,19 +33,19 @@ return (sqrter(n, z));
  * @n: number
  *
  * @z: number
- * 
+ *
  * Return: sqrt
  */
 int sqrter(int n, int z)
 {
 int vad;
-vad = z * z;
+vad = z *z;
 if (n == vad)
 {
 return (z);
 }
 else
 {
-return(sqrter(n, z + 1));
+return (sqrter(n, z + 1));
 }
 }
