@@ -15,22 +15,24 @@ int main(int argc, char *argv[])
 {
 int i, z;
 unsigned long int l;
+char *q;
 z = 0;
-
 if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-for (l = 0; l < strlen(argv[i]); l++)
+q = argv[i];
+for (l = 0; l < strlen(q); l++)
 {
-if (argv[i][l] < 48 || argv[i][l] > 57)
+if (q[l] < 48 || q[l] > 57)
 {
 printf("Error\n");
 return (1);
 }
 else
 {
-z += atoi(argv[i]);
+z += atoi(q);
+q++;
 }
 }
 }
