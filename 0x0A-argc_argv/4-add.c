@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+/**
+ * main - adds numbers
+ *
+ * @argc: well argc
+ *
+ * @argv: well argv
+ *
+ * Return: nothing
+ */
+int main(int argc, char *argv[])
+{
+int i, z;
+
+z = 0;
+if (argc == 0)
+{
+return (0);
+}
+else
+{
+for (i = 0; i < argc; i++)
+{
+if (isdigit(atoi(argv[i])) == 0)
+{
+printf("Error\n");
+return (1);
+}
+else
+{
+z += atoi(argv[i]);
+}
+}
+}
+printf("%d\n", z);
+return (0);
+}
