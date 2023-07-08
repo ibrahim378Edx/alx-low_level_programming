@@ -17,7 +17,7 @@ int i, z;
 z = 0;
 if (argc == 0)
 {
-return (0);
+printf("0\n");
 }
 else
 {
