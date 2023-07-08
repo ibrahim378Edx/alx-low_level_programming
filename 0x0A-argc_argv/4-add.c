@@ -21,7 +21,7 @@ return (0);
 }
 else
 {
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 if (isdigit(atoi(argv[i])) == 0)
 {
