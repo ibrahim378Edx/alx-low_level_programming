@@ -11,32 +11,31 @@
  *
  * Return: nothing
  */
-if (argc > 1)
+int main(int argc, char *argv[])
+{
+	int i, suma = 0, res = 0;
+	char c[] = "Error", *find_letter;
+
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			e = argv[i];
-
-			for (k = 0; k < strlen(e); k++)
+			find_letter = argv[i];
+			while (*find_letter != 0)
 			{
-				if (e[k] < 48 || e[k] > 57)
+				if (*find_letter < 47 || *find_letter > 57)
 				{
-					printf("Error\n");
+					printf("%s\n", c);
 					return (1);
 				}
+				find_letter++;
 			}
-
-			sum += atoi(e);
-			e++;
+			res = atoi(argv[i]);
+			suma += res;
 		}
-
-		printf("%d\n", sum);
+		printf("%d\n", suma);
 	}
 	else
-	{
-		printf("0\n");
-	}
-
+		printf("%d\n", 0);
 	return (0);
 }
-
