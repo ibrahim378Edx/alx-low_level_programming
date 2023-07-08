@@ -15,11 +15,7 @@ int main(int argc, char *argv[])
 int i, z;
 
 z = 0;
-if (argc == 0)
-{
-printf("0\n");
-}
-else
+if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
@@ -33,6 +29,10 @@ else
 z += atoi(argv[i]);
 }
 }
+}
+else
+{
+printf("0\n");
 }
 printf("%d\n", z);
 return (0);
