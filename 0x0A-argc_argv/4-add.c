@@ -24,7 +24,7 @@ for (i = 1; i < argc; i++)
 q = argv[i];
 for (l = 0; l < strlen(q); l++)
 {
-if (q[l] < 48 || q[l] > 57)
+if ((q[l] < 48 || q[l] > 57) && q[l] != 45)
 {
 printf("Error\n");
 return (1);
