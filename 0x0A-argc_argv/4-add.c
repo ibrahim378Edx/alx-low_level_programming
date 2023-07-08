@@ -21,7 +21,7 @@ printf("0\n");
 }
 else
 {
-for (i = 1; i < argc; i++)
+for(i = 1; i < argc; i++)
 {
 if (*argv[i] < 48 || *argv[i] > 57 )
 {
