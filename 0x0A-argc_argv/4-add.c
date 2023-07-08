@@ -13,29 +13,36 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, suma = 0, res = 0;
-	char c[] = "Error", *find_letter;
+int i, z;
+unsigned long int l;
+char *q;
 
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			find_letter = argv[i];
-			while (*find_letter != 0)
-			{
-				if (*find_letter < 47 || *find_letter > 57)
-				{
-					printf("%s\n", c);
-					return (1);
-				}
-				find_letter++;
-			}
-			res = atoi(argv[i]);
-			suma += res;
-		}
-		printf("%d\n", suma);
-	}
-	else
-		printf("%d\n", 0);
-	return (0);
+z = 0;
+if (argc > 1)
+{
+for (i = 1; i < argc; i++)
+{
+q = argv[i];
+for (l = 0; l < strlen(q); l++)
+{
+if ((q[l] < 47 || q[l] > 57))
+{
+printf("Error\n");
+return (1);
+}
+else
+{
+
+}
+}
+z += atoi(q);
+q++;
+}
+printf("%d\n", z);
+}
+else
+{
+printf("0\n");
+}
+return (0);
 }
