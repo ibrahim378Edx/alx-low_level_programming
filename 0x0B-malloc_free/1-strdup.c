@@ -1,22 +1,26 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - function that return a pointer to newly allocated memory
  *
  * @str: the string
  *
- * return: pointer to the new string
+ * Return: pointer to the new string
  */
 char *_strdup(char *str)
 {
-int z;
+int z, l;
 char *q;
-q = malloc(sizeof(str));
+
 if (str == NULL)
 {
 return (NULL);
 }
-else if (q == NULL)
+z = 0;
+l = strlen(str);
+q = malloc((l + 1) * sizeof(char));
+if (q == NULL)
 {
 return (NULL);
 }
