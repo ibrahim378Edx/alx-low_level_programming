@@ -24,7 +24,7 @@ return (NULL);
 }
 else
 {
-for(z = 0; z < size; z++)
+for (z = 0; z < size; z++)
 {
 q[z] = c;
 }
