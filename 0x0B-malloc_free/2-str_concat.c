@@ -20,6 +20,10 @@ int z, l1, l2, i;
 char *q;
 i = 0, l1 = length(s1), l2 = length(s2), z = 0;
 q = malloc(sizeof(char) * (l1 + l2 + 1));
+if (q == NULL)
+{
+return (NULL);
+}
 if (s1 == NULL && s2 == NULL)
 {
 q[0] = '\0';
