@@ -26,11 +26,19 @@ return (NULL);
 }
 while (s1[z] !=  '\0' && s1 != NULL)
 {
+if (s1 == NULL)
+{
+break;
+}
 q[z] = s1[z];
 z++;
 }
 while (s2[i] != '\0' && s2 != NULL)
 {
+if (s2 == NULL)
+{
+break;
+}
 q[z] = s2[i];
 i++;
 z++;
