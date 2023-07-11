@@ -30,9 +30,9 @@ for (i = 0; i < height; i++)
 z[i] = malloc(sizeof(int) * width);
 if (z[i] == NULL)
 {
-for (m = i; m >=0; m--)
+for (m = i; m >= 0; m--)
 {
-free(z[i]);
+free(z[m]);
 }
 free(z);
 return (NULL);
