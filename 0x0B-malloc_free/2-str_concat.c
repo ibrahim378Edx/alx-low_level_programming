@@ -24,12 +24,12 @@ if (q == NULL)
 {
 return (NULL);
 }
-while (s1[z] !=  '\0' || s1 != NULL)
+while (s1[z] !=  '\0' && s1 != NULL)
 {
 q[z] = s1[z];
 z++;
 }
-while (s2[i] != '\0' || s2 != NULL)
+while (s2[i] != '\0' && s2 != NULL)
 {
 q[z] = s2[i];
 i++;
