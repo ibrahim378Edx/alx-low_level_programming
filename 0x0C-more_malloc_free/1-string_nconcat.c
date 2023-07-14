@@ -30,6 +30,7 @@ while (s2[i] != '\0' && i < n)
 new[i] = s2[i];
 i++;
 }
+new[i + 1] = '\0';
 return (new);
 }
 if (s2 == NULL)
@@ -39,6 +40,7 @@ while (s1[i] != '\0')
 new[i] = s1[i];
 i++;
 }
+new[i + 1] = '\0';
 return (new);
 }
 if (s1 != NULL && s2 != NULL)
