@@ -18,40 +18,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 char *new;
 unsigned int l1, l2, i, j;
 l1 = lengther(s1), l2 = lengther(s2), i = 0, j = 0;
-if (n < l2)
+if (n >= l2)
 {
+n = l2;
+}
 new = malloc(sizeof(char) * (n + l1 + 1));
-}
-else
-{
-new = malloc(sizeof(char) * (l2 + l1 + 1));
-}
 if (new == NULL)
 {
 return (NULL);
 }
 if (s1 == NULL)
 {
-while (s2[i] != '\0' && i < n)
-{
-new[i] = s2[i];
-i++;
-}
-new[i] = '\0';
-return (new);
+s1 = "";
 }
 if (s2 == NULL)
 {
-while (s1[i] != '\0')
-{
-new[i] = s1[i];
-i++;
+s2 = "";
 }
-new[i] = '\0';
-return (new);
-}
-if (s1 != NULL && s2 != NULL)
-{
 while (s1[i] != '\0')
 {
 new[i] = s1[i];
@@ -63,10 +46,10 @@ new[i] = s2[j];
 i++;
 j++;
 }
-}
 new[i] = '\0';
 return (new);
 }
+
 /**
  * lengther - gets length of string
  *
