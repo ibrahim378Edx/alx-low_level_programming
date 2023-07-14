@@ -13,17 +13,13 @@
  */
 int *array_range(int min, int max)
 {
-int *q, i, l, m;
-i = min, l = 0, m = min;
+int *q, l, m;
+l = 0, m = min;
 if (min > max)
 {
 return (NULL);
 }
-while (i < max)
-{
-i++;
-}
-q = malloc(sizeof(int) * (i + 1));
+q = malloc(sizeof(int) * ((max - min) + 1));
 if (q == NULL)
 {
 return (NULL);
