@@ -17,12 +17,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 char *q;
 unsigned int l;
-l = 0;
-q = malloc(new_size);
-if (q == NULL)
-{
-return (NULL);
-}
 if (old_size == new_size)
 {
 return (ptr);
@@ -43,6 +37,11 @@ if (new_size == 0)
 free(ptr);
 return (NULL);
 }
+}
+q = malloc(new_size);
+if (q == NULL)
+{
+return (NULL);
 }
 for (l = 0; l < old_size && l < new_size; l++)
 {
