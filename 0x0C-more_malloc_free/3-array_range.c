@@ -19,11 +19,11 @@ if (min > max)
 {
 return (NULL);
 }
-while (i <= max)
+while (i < max)
 {
 i++;
 }
-q = malloc(sizeof(int) * i);
+q = malloc(sizeof(int) * (i + 1));
 if (q == NULL)
 {
 return (NULL);
