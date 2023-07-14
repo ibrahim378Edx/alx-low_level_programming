@@ -23,7 +23,7 @@ while (i < max)
 {
 i++;
 }
-q = malloc(sizeof(int) * (i + 1));
+q = malloc(sizeof(int) * i);
 if (q == NULL)
 {
 return (NULL);
