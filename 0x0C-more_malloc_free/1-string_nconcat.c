@@ -33,7 +33,7 @@ n = l2;
 new = malloc(sizeof(char) * (n + l1 + 1));
 if (new == NULL)
 {
-return (NULL);
+return (new);
 }
 while (s1[i] != '\0')
 {
