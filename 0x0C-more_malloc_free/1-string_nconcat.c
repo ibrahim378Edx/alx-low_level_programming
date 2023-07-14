@@ -22,7 +22,7 @@ if (n < l2)
 {
 new = malloc(sizeof(char) * (n + l1 + 1));
 }
-else if (n >= l2)
+else
 {
 new = malloc(sizeof(char) * (l2 + l1 + 1));
 }
