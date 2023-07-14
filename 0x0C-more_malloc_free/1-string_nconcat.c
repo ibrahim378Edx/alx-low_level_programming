@@ -32,7 +32,7 @@ return (NULL);
 }
 if (s1 == NULL)
 {
-while (s2[i] != '\0' && i < n)
+while (s2[i] != '\0' && i <= n)
 {
 new[i] = s2[i];
 i++;
