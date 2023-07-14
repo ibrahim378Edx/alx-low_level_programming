@@ -28,7 +28,7 @@ if (q == NULL)
 {
 return (NULL);
 }
-while (m <= max)
+while (m < max)
 {
 q[l] = l + min;
 m = q[l];
