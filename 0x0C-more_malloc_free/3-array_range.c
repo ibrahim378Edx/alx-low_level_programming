@@ -28,10 +28,10 @@ if (q == NULL)
 {
 return (NULL);
 }
-while (m < max)
+while (m <= max)
 {
-q[l] = l + min;
-m = q[l];
+q[l] = m;
+m = m + 1;
 l++;
 }
 return (q);
