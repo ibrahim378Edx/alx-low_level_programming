@@ -13,8 +13,8 @@
  */
 int *array_range(int min, int max)
 {
-int *q, i, l;
-i = 0, l = 0;
+int *q, i, l, m;
+i = 0, l = 0, m = 0;
 if (min > max)
 {
 return (NULL);
@@ -23,14 +23,15 @@ while (i < max)
 {
 i++;
 }
-q = malloc(sizeof(int) * i);
+q = malloc(sizeof(int) * (i + 1));
 if (q == NULL)
 {
 return (NULL);
 }
-while (l < max)
+while (m <= max)
 {
 q[l] = l + min;
+m = q[l];
 l++;
 }
 return (q);
