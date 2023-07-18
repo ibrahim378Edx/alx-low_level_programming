@@ -27,8 +27,6 @@ if (q->owner == NULL || q->name == NULL)
 return (NULL);
 }
 q->age = age;
-//q->name = name;
-//q->owner = owner;
 strcpy(q->name, name);
 strcpy(q->owner, owner);
 return (q);
