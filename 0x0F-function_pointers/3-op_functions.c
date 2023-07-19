@@ -66,7 +66,7 @@ return (a / b);
 /**
   * op_mod - calc module
   *
-  * @a: first value 
+  * @a: first value
   *
   * @b: second value
   *
