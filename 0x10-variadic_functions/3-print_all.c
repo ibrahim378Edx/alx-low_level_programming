@@ -37,20 +37,14 @@ void print_all(const char* const format, ...)
                 break;
             case 's':
                 arg.s = va_arg(args, char*);
-                if (arg.s == NULL)
-                {
-                    printf("%s(nil)", printed ? ", " : "");
-                }
-                else
-                {
-                    printf("%s%s", printed ? ", " : "", arg.s);
-                }
                 printed = 1;
+                printf("%s%s", printed && arg.s ? ", " : "", arg.s ? arg.s : "(nil)");
                 break;
             default:
                 break;
         }
 
+        printed = (printed && (*p != 's')) ? 1 : printed;
         p++;
     }
 
