@@ -23,6 +23,10 @@ if (l != NULL)
 {
 printf("%s", l);
 }
+else
+{
+printf("%s", "(nil)");
+}
 if (separator != NULL && i != n - 1)
 {
 printf("%s", separator);
