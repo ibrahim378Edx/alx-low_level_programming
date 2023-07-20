@@ -2,11 +2,13 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * sum_them_all - sums all the values from arguments
+ * print_numbers - prints numbers
  *
- * @n: first value
+ * @separator: just a separator
  *
- * Return: sum of all values
+ * @n: number of values
+ *
+ * Return: nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
