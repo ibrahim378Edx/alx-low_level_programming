@@ -17,10 +17,10 @@ k = (*head);
 *head = (*head)->next;
 free(k);
 }
+}
 else
 {
 return;
-}
 }
 free(*head);
 head = 0;
