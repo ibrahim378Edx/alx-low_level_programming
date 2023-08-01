@@ -23,6 +23,6 @@ else
 {
 return;
 }
-free(k);
+free(head);
 head = 0;
 }
