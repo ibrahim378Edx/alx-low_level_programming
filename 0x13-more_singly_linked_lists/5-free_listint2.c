@@ -16,5 +16,4 @@ z = k->next;
 free(k);
 k = z;
 }
-head = NULL;
 }
