@@ -19,5 +19,5 @@ free(k);
 }
 }
 free(*head);
-head = NULL;
+head = 0;
 }
