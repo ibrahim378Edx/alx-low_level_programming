@@ -10,19 +10,11 @@ void free_listint2(listint_t **head)
 {
 listint_t *k = *head;
 listint_t *z = NULL;
-if (head != NULL)
-{
 while (k != NULL)
 {
 z = k->next;
 free(k);
 k = z;
 }
-}
-else
-{
-return;
-}
-free(head);
-head = 0;
+head = NULL;
 }
