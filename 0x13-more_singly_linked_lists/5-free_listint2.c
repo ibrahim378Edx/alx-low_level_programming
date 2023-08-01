@@ -13,9 +13,13 @@ if (head != NULL)
 {
 while (*head != NULL)
 {
-k = *head;
+k = (*head);
 *head = (*head)->next;
 free(k);
+}
+else
+{
+return;
 }
 }
 free(*head);
