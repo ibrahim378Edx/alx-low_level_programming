@@ -18,5 +18,6 @@ k = *head;
 free(k);
 }
 }
-*head = NULL;
+free(*head);
+head = NULL;
 }
