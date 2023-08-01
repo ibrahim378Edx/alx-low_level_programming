@@ -23,5 +23,5 @@ else
 {
 return;
 }
-head = NULL;
+*head = NULL;
 }
