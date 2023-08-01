@@ -23,6 +23,5 @@ else
 {
 return;
 }
-free(head);
 *head = NULL;
 }
