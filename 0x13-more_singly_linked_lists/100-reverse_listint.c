@@ -22,5 +22,5 @@ onest = second;
 *head = onest;
 return (*head);
 }
-return(NULL);
+return (NULL);
 }
