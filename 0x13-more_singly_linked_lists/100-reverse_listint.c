@@ -20,7 +20,7 @@ second->next = onest;
 onest = second;
 }
 *head = onest;
-return (*head)
+return (*head);
 }
 return(NULL);
 }
