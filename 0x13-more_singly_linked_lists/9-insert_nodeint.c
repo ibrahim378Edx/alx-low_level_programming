@@ -7,6 +7,8 @@
  * @idx: index to add at
  *
  * @n: value to add
+ *
+ * Return: address of new node
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -18,7 +20,7 @@ if (head != NULL)
 temp = malloc(sizeof(listint_t));
 if (temp == NULL)
 {
-return (NULL); 
+return (NULL);
 }
 temp->n = n;
 if (idx > 0)
@@ -30,7 +32,7 @@ if (z == idx)
 {
 temp->next = alt->next;
 alt->next = temp;
-return(temp);
+return (temp);
 }
 alt = alt->next;
 z++;
@@ -45,7 +47,7 @@ else
 temp->next = *head;
 *head = temp;
 }
-return(temp);
+return (temp);
 }
 return (NULL);
 }
