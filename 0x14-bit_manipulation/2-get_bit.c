@@ -3,11 +3,13 @@
 #include "main.h"
 
 /**
-  * get_bit - Gets the value of a bit at a given index
-  * @n: The number to find the index
-  * @index: The index to find
+  * get_bit - get value at the index
   *
-  * Return: ...
+  * @n: The actual number
+  *
+  * @index: The index
+  *
+  * Return: the value at the index
   */
 int get_bit(unsigned long int n, unsigned int index)
 {
@@ -16,7 +18,7 @@ while (n)
 {
 if (counter == index)
 {
-if (n % 2)
+if (n % 2 == 1)
 {
 return (1);
 }
