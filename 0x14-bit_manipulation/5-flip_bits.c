@@ -3,9 +3,9 @@
 /**
   * flip_bits - finds out the number of flips to switch a number to another
   *
-  * @n: first number 
+  * @n: first number
   *
-  * @m: second number 
+  * @m: second number
   *
   * Return: number of flips needed
   */
