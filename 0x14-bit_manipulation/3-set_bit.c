@@ -7,7 +7,7 @@
   *
   * @n: The number to modify
   *
-  * @index: The index 
+  * @index: The index
   *
   * Return: 1 one or success or -1 on error
   */
