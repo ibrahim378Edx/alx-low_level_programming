@@ -23,7 +23,7 @@ return (-1);
 }
 if (text_content)
 {
-write(file, text_content, _strlen(text_content));
+write(file, text_content, lengther(text_content));
 }
 close(file);
 return (1);

@@ -24,8 +24,8 @@ if (file == -1)
 return (0);
 }
 check = read(file, buff, letters);
-write(STDOUT_FILENO, buff, readed);
+write(STDOUT_FILENO, buff, check);
 free(buff);
 close(file);
-return (readed);
+return (check);
 }
