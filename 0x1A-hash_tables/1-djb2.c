@@ -3,11 +3,11 @@
 #include "hash_tables.h"
 
 /**
-  * hash_djb2 - A hash function to make djb2.c
+  * hash_djb2 - A hash function to make djb2
   *
-  * @str: The value to which the function
+  * @str: The value
   *
-  * Return: A number representing the given string
+  * Return: A number reps string
   */
 unsigned long int hash_djb2(const unsigned char *str)
 {
