@@ -16,7 +16,7 @@ int c;
 hasher = 5381;
 while ((c = *str++))
 {
-hasher = ((hasher << 5) + hasher) + c;
+hasher = ((hasher << 5) + hasher) +c;
 }
 return (hasher);
 }
